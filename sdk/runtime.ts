@@ -11,8 +11,9 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
+import { env } from "../env.mjs";
 
-export const BASE_PATH = "http://localhost:3000/api".replace(/\/+$/, "");
+export const BASE_PATH = env.NEXT_PUBLIC_OPENAPI_BASE_PATH.replace(/\/+$/, "");
 
 export interface ConfigurationParameters {
   basePath?: string; // override base path

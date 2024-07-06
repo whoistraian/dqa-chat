@@ -1,10 +1,12 @@
+import { env } from "./env.mjs";
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     async rewrites() {
         return [
             {
                 source: '/api/:path*',
-                destination: 'http://localhost:8000/:path*',
+                destination: env.API_REWRITE_DESTINATION_URL + '/:path*',
             },
         ];
     },

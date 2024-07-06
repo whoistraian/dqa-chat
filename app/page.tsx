@@ -15,5 +15,5 @@ export default function Home() {
     }
   }, [status, router, me]);
 
-  return <Thread />;
+  return <React.Fragment>{me && <Thread />}</React.Fragment>;
 }
