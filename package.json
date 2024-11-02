@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@ai-sdk/openai": "^0.0.34",
+    "@ai-sdk/openai": "^0.0.71",
     "@ai-sdk/react": "^0.0.16",
     "@assistant-ui/react": "^0.3.3",
     "@assistant-ui/react-ai-sdk": "^0.3.1",
